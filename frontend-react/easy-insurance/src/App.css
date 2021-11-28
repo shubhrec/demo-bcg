@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashboard-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+.datatable-grid {
+  width: 70%;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 3rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#policy-chunk {
+  width: 25%;
+  min-width:240px;
+  position: absolute;
+  right: 0px;
+  top: 75px;
+  margin-left: 10px;
+  position: fixed;
+  text-align: left;
+  font-size: 14px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  /* box-shadow: 0 2px 4px rgb(0 0 0 / 50%); */
+}
+
+thead {
+  font-size: 11px;
+}
+
+#button-holder {
+  margin-top: 10px;
+}
+
+.button-span {
+  width: 50%;
+}
+
+label {
+  align-self: flex-end;
+  margin-bottom: 0px;
+  font-weight:600;
+}
+.form-group {
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  margin-bottom: 5px;
+  line-height: 15px;
+}
+
+body {
+  background-color: #fff;
+}
+
+table {
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    color:grey;
+}
+tr{
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+  rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+}
+tr{
+  height:45px;
+}
+.tbody-tr:hover {
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  background-color: #343a40;
+  color:white;
+}
+
+.header-bar{
+  margin-bottom:50px;
+  background-color:#212121;
+  color:white;
+  height:64px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+  width:100%;
+  /* text-align: left; */
+}
+/* 
+background: #ffc107;
+color: white; */
+
+
+#search{
+  width:200px;
+  margin-bottom:20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+table th {
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
+  z-index: 1; 
+  background: #fff; 
+  border:1px solid darkgray;
+}
+
+#update-policy-head{
+  /* margin-left: -15px; */
+  /* background: #8bc34a; */
+  /* border-bottom: 2px solid black; */
+  box-shadow: rgb(3 8 20 / 10%) 0px 0.15rem 0.5rem, rgb(2 8 20 / 10%) 0px 0.075rem 0.175rem;
+  color: gray;
+  margin-bottom: 0px;
+}
+
+.sitename{
+  margin-left:10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+#nav-urls{
+  text-align: right;
+  margin-top: 30px;
+  font-size:x-large;
+}
+
+ #url-policy:hover{
+  color:#9e9e9e;
+}
+#url-analytics:hover{
+  color:#9e9e9e;
+}
+a { color: inherit; } 
+a:hover { color: inherit; } 
+
+
+#region-select{
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+#label-region-select{
+  font-size: 24px;
+}
+
+#region-select-container{
+  text-align: right;
+  margin-bottom: 20px;
+}
+.divider-div{
+  height: 100%;
+  border-left:1px solid gray;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+}
+
+#chart-container-div{
+  width:100%;
+  overflow-x: hidden;
+}
